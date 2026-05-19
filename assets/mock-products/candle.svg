@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#fff9f1"/>
+  <ellipse cx="600" cy="700" rx="240" ry="65" fill="#d8c6b4" opacity="0.45"/>
+  <rect x="420" y="300" width="360" height="360" rx="48" fill="#a56f3f" opacity="0.85"/>
+  <rect x="470" y="360" width="260" height="250" rx="20" fill="#f8f0e7"/>
+  <path d="M600 220c-30 45-22 86 0 120 22-34 30-75 0-120z" fill="#e9a93e"/>
+  <text x="600" y="500" text-anchor="middle" font-size="42" font-family="Georgia" fill="#2f3b2b">BOTANICAL CANDLE</text>
+</svg>
