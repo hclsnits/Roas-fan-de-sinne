@@ -1,0 +1,11 @@
+{
+  "name": "roas-fan-de-sinne",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 5173 --bind 0.0.0.0",
+    "build": "node scripts/check-site.mjs",
+    "start": "python3 -m http.server 5173 --bind 0.0.0.0"
+  },
+  "devDependencies": {}
+}
