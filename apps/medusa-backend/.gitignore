@@ -1,0 +1,6 @@
+.env
+.env.local
+.medusa
+node_modules
+dist
+coverage

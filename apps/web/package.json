@@ -1,0 +1,33 @@
+{
+  "name": "@apps/web",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "astro build",
+    "dev": "astro dev --host 0.0.0.0 --port 3000",
+    "preview": "astro preview --host 0.0.0.0",
+    "deploy": "astro build && wrangler pages deploy dist",
+    "typegen": "sanity schema extract --path schema.json"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "latest",
+    "@astrojs/react": "latest",
+    "@medusajs/js-sdk": "latest",
+    "@nanostores/react": "latest",
+    "@sanity/astro": "latest",
+    "@stripe/stripe-js": "latest",
+    "astro": "5.16.11",
+    "lucide-react": "latest",
+    "nanostores": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "sanity": "latest",
+    "tailwindcss": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "wrangler": "latest"
+  }
+}

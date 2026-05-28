@@ -1,0 +1,27 @@
+{
+  "name": "@apps/medusa-backend",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "medusa build",
+    "dev": "medusa develop",
+    "start": "medusa start",
+    "seed": "medusa exec ./src/scripts/seed.ts",
+    "add-user": "medusa user -e admin@medusa.com -p supersecret",
+    "test:integration:http": "jest --testPathPattern=integration-tests/http",
+    "test:unit": "jest --testPathPattern=unit"
+  },
+  "dependencies": {
+    "@medusajs/admin-sdk": "latest",
+    "@medusajs/framework": "latest",
+    "@medusajs/medusa": "latest",
+    "@medusajs/types": "latest",
+    "@sanity/client": "latest",
+    "pg": "latest",
+    "stripe": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "5.9.2"
+  }
+}
