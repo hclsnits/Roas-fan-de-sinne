@@ -1,0 +1,25 @@
+---
+import ProductCard from "../components/ProductCard.astro";
+import { getFeaturedProducts } from "../lib/medusa";
+
+const products = await getFeaturedProducts();
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Munchies</title>
+  </head>
+  <body class="bg-orange-50 text-zinc-950">
+    <main class="mx-auto max-w-6xl px-6 py-16">
+      <section class="mb-12 rounded-[2rem] bg-white p-10 shadow-sm">
+        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-orange-700">Munchies</p>
+        <h1 class="max-w-3xl text-5xl font-black tracking-tight">A Medusa + Astro starter for snackable commerce.</h1>
+        <p class="mt-5 max-w-2xl text-lg text-zinc-600">Wire this storefront to the Medusa backend, Sanity content, Stripe payments, and the search worker.</p>
+      </section>
+      <section class="grid gap-6 md:grid-cols-3">
+        {products.map((product) => <ProductCard {...product} />)}
+      </section>
+    </main>
+  </body>
+</html>

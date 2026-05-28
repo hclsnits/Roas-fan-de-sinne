@@ -1,0 +1,19 @@
+{
+  "name": "@apps/search",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "dev": "wrangler dev src/index.ts --port 8787",
+    "deploy": "wrangler deploy src/index.ts"
+  },
+  "dependencies": {
+    "@orama/orama": "latest"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "latest",
+    "typescript": "5.9.2",
+    "wrangler": "latest"
+  }
+}

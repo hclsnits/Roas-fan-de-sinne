@@ -1,0 +1,6 @@
+.env
+.env.local
+.astro
+dist
+.wrangler
+node_modules

@@ -1,0 +1,11 @@
+node_modules
+.env
+.env.*.local
+dist
+.medusa
+.astro
+.turbo
+.vercel
+.wrangler
+.DS_Store
+*.log
