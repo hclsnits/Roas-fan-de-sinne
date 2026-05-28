@@ -1,45 +1,17 @@
-# Munchies
+# Roas van de Sinne
 
-E-commerce platform starter based on the public `tinloof/munchies` repository structure.
-
-## Tech Stack
-
-- Astro 5 SSR storefront on Cloudflare Workers/Pages
-- Medusa v2 backend
-- Sanity CMS integration hooks
-- Orama-style search worker
-- React, Tailwind CSS, Stripe-ready configuration
-
-## Prerequisites
-
-- Node.js >= 18
-- pnpm 9+
-- PostgreSQL
-- Redis (optional)
-
-## Quick Start
-
-```bash
-pnpm install
-# Copy .env files in each app
-pnpm dev
-```
-
-## Monorepo Structure
-
-```text
-apps/
-├── web/            # Astro storefront
-├── medusa-backend/ # E-commerce backend
-└── search/         # Search service
-```
+A self-contained static website for **Roas van de Sinne**, a botanical rituals and conscious care brand. The page recreates the provided ChatGPT mockup with a soft botanical palette, product cards, inline logo mark, and newsletter sign-up area.
 
 ## Scripts
 
-| Command | Description |
-| ------- | ----------- |
-| `pnpm dev` | Start all apps |
-| `pnpm build` | Build all apps |
-| `pnpm typegen` | Generate types |
-| `pnpm check` | Lint check |
-| `pnpm fix` | Auto-fix lint |
+- `npm run dev` starts a Python static file server on port 5173 and binds it to `0.0.0.0` so hosted workspaces can expose the port.
+- `npm start` is an alias for `npm run dev`.
+- `npm run build` runs a lightweight validation check that confirms the expected site files and brand content exist.
+
+## Viewing the website
+
+1. Run `npm run dev` from the repository root.
+2. If you are running the project on your own computer, open <http://127.0.0.1:5173>.
+3. If you are running the project in a hosted workspace, Codespace, or container, use the workspace's forwarded-port/preview URL for port `5173` instead of typing `127.0.0.1` in your local browser.
+
+`127.0.0.1` always points to the computer where the browser is running. If the server is running inside a remote container, your local browser's `127.0.0.1:5173` will refuse the connection unless that port is forwarded by the hosting environment.

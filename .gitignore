@@ -1,11 +1,6 @@
 node_modules
-.env
-.env.*.local
 dist
-.medusa
-.astro
-.turbo
-.vercel
-.wrangler
+.env
+.env.local
 .DS_Store
 *.log
